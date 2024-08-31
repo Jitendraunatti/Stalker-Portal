@@ -13,15 +13,27 @@ include "config.php";
     <link rel="stylesheet" href="style.css" />
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; 
+        margin: 0;
+    }
+
+    .footer {
+        margin-top: auto; 
+        background-color: #333;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 0;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+    }
+
 
         .log {
             background: #4CAF50;
@@ -136,8 +148,7 @@ include "config.php";
             $jsonData = json_encode($data, JSON_PRETTY_PRINT);
 
             $filePath = "$JITENDRA_PRO_DEV_X_DARK_SIDE/data.txt";
-
-            if (file_put_contents($filePath, $jsonData) !== false) {
+            if (file_put_contents($filePath,scarlet_witch("encrypt", $jsonData)) !== false) {
                 $jitendraunatti = "<div class='message success'>Data saved successfully</div>";
             } else {
                 $jitendraunatti = "<div class='message error'>Error saving data</div>";
@@ -178,24 +189,13 @@ include "config.php";
                 <?php echo $jitendraunatti; ?>
             </div>
         </form>
-        <div class="button-container">
-            <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-                <button type="submit" name="on" class="btn btn-on">On</button>
-                <button type="submit" name="off" class="btn btn-off">Off</button>
-            </form>
+       
         </div>
-        <div class="message-container">
-            <?php echo $statusMessage; ?>
-        </div>
-        <footer style="background-color: rgba(0, 0, 0, 0.5); color: #fff; padding: 20px; text-align: center;">
-  <span class="footer-text" style="font-family: 'Arial', sans-serif; font-size: 1.2em;">
-    Coded with <span style="color: #e25555;">❤️</span> by <b>Jitendra Kumar</b>
-  </span>
-</footer>
-
-  </span>
-</footer>
-
-    </div>
+        <footer>
+        <span style="color: #ffffff; font-family: Arial, sans-serif; font-size: 20px;">
+            Coded with <span>❤️</span> by <b>Jitendra Kumar</b>
+        </span>
+    </footer>
 </body>
+
 </html>

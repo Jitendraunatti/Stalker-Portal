@@ -136,6 +136,11 @@ include "config.php";
         </form>
 
         <?php
+if (!file_exists('playlist.m3u')) {
+    header("Location: playlist.php");
+    exit;
+}
+
 $m3uUrl = "playlist.m3u";
 $m3uContent = file_get_contents($m3uUrl);
 

@@ -60,10 +60,11 @@ $JITENDRA_PRO_DEV_X_TIMESTAMP = date('l jS \of F Y h:i:s A');
 $JITENDRA_PRO_DEV_X_DOCTOR_STRANGE = tv_id();
 if (!empty($JITENDRA_PRO_DEV_X_SYLIVE)) {
     $JITENDRA_PRO_DEV_X_PLAYLIST_DATA = "#EXTM3U\n#DEVELOPED_BY_JITENDRA_PRO_DEV\n#AUTHOR:-JITENDRA_KUMAR\n#DATE:- $JITENDRA_PRO_DEV_X_TIMESTAMP\n
-#
-# ───░█ ▀█▀ ▀▀█▀▀ ░█▀▀▀ ░█▄─░█ ░█▀▀▄ ░█▀▀█ ─█▀▀█ ── ░█─▄▀ ░█─░█ ░█▀▄▀█ ─█▀▀█ ░█▀▀█ 
-# ─▄─░█ ░█─ ─░█── ░█▀▀▀ ░█░█░█ ░█─░█ ░█▄▄▀ ░█▄▄█ ▀▀ ░█▀▄─ ░█─░█ ░█░█░█ ░█▄▄█ ░█▄▄▀ 
-# ░█▄▄█ ▄█▄ ─░█── ░█▄▄▄ ░█──▀█ ░█▄▄▀ ░█─░█ ░█─░█ ── ░█─░█ ─▀▄▄▀ ░█──░█ ░█─░█ ░█─░█\n";
+      #     ██  ██ ████████ ███████ ███   ██ ██████  ██████   █████        ██   ██ ██    ██ ███    ███  █████  ██████
+      #     ██  ██    ██    ██      ████  ██ ██   ██ ██   ██ ██   ██       ██  ██  ██    ██ ████  ████ ██   ██ ██   ██
+      #     ██  ██    ██    █████   ██ ██ ██ ██   ██ ██████  ███████ █████ █████   ██    ██ ██ ████ ██ ███████ ██████
+      #██   ██  ██    ██    ██      ██  ████ ██   ██ ██   ██ ██   ██       ██  ██  ██    ██ ██  ██  ██ ██   ██ ██   ██
+      # █████   ██    ██    ███████ ██   ███ ██████  ██   ██ ██   ██       ██   ██  ██████  ██      ██ ██   ██ ██   ██\n". PHP_EOL;
     $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://';
     $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
     $JITENDRA_PRO_DEV_X_THANOS = parse_url($_SERVER["REQUEST_URI"]);
