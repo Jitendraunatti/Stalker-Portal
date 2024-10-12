@@ -54,6 +54,27 @@ http://localhost:8080/STALKER-PORTAL/
 
 </br>
 
+
+<h3>TIZEN OS ,WEB OS  ANDRIOD TV SETUP:</h3>
+
+
+-   **Install KS Web App**:
+    
+    -   Ensure that the **KS Web** app is installed on your mobile device.
+-   **Connect Devices**:
+    
+    -   Your mobile device and TV must be connected to the **same Wi-Fi network**.
+-   **Accessing on TV**:
+    
+    -   Open the web browser on your TV.
+    -   On your mobile device, you will be provided with an IP address by the KS Web app.
+    -   **Note**: This IP address is different for every user.
+    -   Enter the provided IP address into your TV's browser .Ex http://192.168.0.120:8080
+-   **Example**:
+<img src="https://i.ibb.co/K5s5n5d/IMG-20240811-170717.jpg" alt="mob-Catchup" width="320">
+
+
+
 <h3>👿 LOGIN :</h3>
 
 1. Open `STALKER-PORTAL`  </br>
