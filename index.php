@@ -235,7 +235,7 @@ if (file_exists($DARK_SIDE . "/detail.jitendraunatti")) {
         <img class="logo" src="' . $AMERICA_CHAVEZ["logo"] . '" alt="' . htmlspecialchars($AMERICA_CHAVEZ["Name"]) . '">
     </a>
     <h2 class="name">' . htmlspecialchars($AMERICA_CHAVEZ["Name"]) . '</h2>
-</div>';
+   </div>';
         }
         echo '</div>';
     } else {
