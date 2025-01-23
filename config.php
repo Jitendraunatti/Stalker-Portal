@@ -4,8 +4,8 @@ $DARK_SIDE = "doctor_strange";
 $LIGHT_SIDE = "cache_jitendraunatti";
 date_default_timezone_set("Asia/Kolkata");
 if (!(is_dir($DARK_SIDE) && is_dir($LIGHT_SIDE))) {
-    mkdir($DARK_SIDE, 777, true);
-    mkdir($LIGHT_SIDE, 777, true);
+    mkdir($DARK_SIDE, 0777, true);
+    mkdir($LIGHT_SIDE, 0777, true);
     if (!file_exists($DARK_SIDE . "/.htaccess")) {
         @file_put_contents($DARK_SIDE . "/.htaccess", "deny from all");
     }
