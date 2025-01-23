@@ -59,7 +59,7 @@ http://localhost:8080/Stalker-Portal/
 1. Open `Stalker-Portal`  </br>
 
 2. Click on the Login button. </br>
-3. Enter the username and password. The username is **DOCTOR_STRANGE** and the password is **JITENDRAUNATTI**.
+3. Enter the username and password. The username is **DOCTOR_STRANGE** and the password is **JITENDRAUNATTI**
 <img src="https://i.ibb.co/W3SLKTj/image.png" alt="home" width="700" height="350">
 4. Enter your *Stalker portal detail.* </br>
 <img src="https://i.ibb.co/vVrg8VB/image.png" alt="home" width="700" height="350">
