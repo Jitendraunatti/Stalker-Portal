@@ -21,7 +21,7 @@ if (isset($_REQUEST['id']) && validation()) {
         $DOCTOR_STRANGE = jitendraunatti($SCARLET_WITCH["JITENDRAUNATTI"]["data"]["main_url"], $ROLEX, "GET", $KANG = null, 0, 1, 0, 0, false);
         $ULTRON = ULTRON($DOCTOR_STRANGE["JITENDRAUNATTI"]["info"]["url"]);
         header('Content-Type: application/vnd.apple.mpegurl');
-        if(!empty($DOCTOR_STRANGE["JITENDRAUNATTI"]["data"]) && strpos($DOCTOR_STRANGE["JITENDRAUNATTI"]["data"],"m3u8")!==false&&($MJ["Proxy"]=="AUTO"||["Proxy"]=="ON")){
+        if(!empty($DOCTOR_STRANGE["JITENDRAUNATTI"]["data"]) && strpos($DOCTOR_STRANGE["JITENDRAUNATTI"]["data"],"m3u8")!==false  &&  ($WANDA["Proxy"]=="AUTO" || $WANDA["Proxy"]=="ON")){
         echo str_replace([base64_decode($MJ["En_data"]["hold"]), ".m3u8"], [$protocol.$host.$THANOS."?rolex=" . $ULTRON .base64_decode($MJ["En_data"]["hold"]), base64_decode($MJ["En_data"]["seg"])], $DOCTOR_STRANGE["JITENDRAUNATTI"]["data"]);
         }else{
         header("Location:" . $SCARLET_WITCH["JITENDRAUNATTI"]["data"]["main_url"]);
