@@ -1,5 +1,5 @@
 <?php
-// error_reporting(0);
+error_reporting(0);
 $DARK_SIDE = "doctor_strange";
 $LIGHT_SIDE = "cache_jitendraunatti";
 date_default_timezone_set("Asia/Kolkata");
