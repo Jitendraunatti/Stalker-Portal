@@ -1,5 +1,9 @@
 <?php
 include("config.php");
+if(!file_exists($DARK_SIDE . "/detail.jitendraunatti")){
+    header("Location: login.php");
+    exit();
+}
 ?>
     <title><?php echo $MJ["Meta_data"]["title"]; ?></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
