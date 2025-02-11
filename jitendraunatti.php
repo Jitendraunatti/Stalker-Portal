@@ -29,7 +29,7 @@ if (isset($_REQUEST['id']) && validation()) {
         }
     } else {
         if (strpos($_REQUEST["id"], "http") !== false) {
-            header("Location:" . $$_REQUEST["id"]);
+            header("Location:" . $_REQUEST["id"]);
         } else {
             header("Location:" . base64_decode($_REQUEST["id"]));
         }
